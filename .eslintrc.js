@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
@@ -25,7 +26,7 @@ module.exports = {
     // 3. 注意要加上这一句，开启 prettier 自动修复的功能
     'prettier/prettier': 'error',
     quotes: ['error', 'single'],
-    semi: ['error', 'always'],
+    // semi: ['error', 'always'],
     'react/react-in-jsx-scope': 'off'
   }
 };
