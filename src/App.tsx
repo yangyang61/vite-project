@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.less';
 import ins from '@assets/ins.svg';
+import Header from './components/Header';
 // import Worker from './example.js?worker';
 
 // // 1. 初始化 Worker 实例
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <Header />
         <img src={logo} className="app-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
