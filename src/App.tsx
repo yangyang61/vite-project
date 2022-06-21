@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.less';
+import ins from '@assets/ins.svg';
+// import Worker from './example.js?worker';
+
+// // 1. 初始化 Worker 实例
+// const worker = new Worker();
+// // 2. 主线程监听 worker 的信息
+// worker.addEventListener('message', (e) => {
+//   console.log(e);
+// });
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +27,7 @@ function App() {
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
+        <img src={ins} alt="ins" />
         <p>
           <a
             className="app-link"
