@@ -9,8 +9,6 @@ const Header = () => {
     const [svgName] = fileName.split('.');
     return svgName;
   });
-  console.log('iconurls', iconUrls);
-
   return (
     <div>
       {iconUrls.map((item) => (
